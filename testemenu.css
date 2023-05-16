@@ -78,8 +78,10 @@ body{
     height: 30vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
     align-items: top;
+    align-content: center;
     text-align: center;
     padding-top: 60px;
     animation: fadeInDownBig 2s;
@@ -94,7 +96,7 @@ body{
     height: 90px;
     background-color: orangered;  
     position: absolute;
-    top: 450px;
+    top: 300px;
     right:60px;
     text-align: center;
     align-items: center;

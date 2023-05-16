@@ -46,7 +46,7 @@ body {
   .caixa:hover{
     background-color: rgba(172, 148, 148, 0.712);
   }
-  .botao {
+  .confirmar {
     border: 0;
     border-radius: 1rem;
     display: block;
@@ -62,7 +62,7 @@ body {
     align-items: center;
     justify-items: center;
   }
-  .botao:hover{
+  .confirmar:hover{
   background-color: rgba(105, 160, 134, 0.589);
   cursor: pointer;
   }
