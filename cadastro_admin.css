@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(236, 120, 12), rgb(235, 234, 229));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo
+  {
+      width: 120px;
+      height: 120px;
+  }
+  .box {
+      border: 0;
+      border-radius: 2rem;
+      width: 650px;
+      height: 550px;
+      background: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  } 
+  .box2 {
+    border: 0;
+    border-radius: 2rem;
+    width: 650px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} 
+.caixa {
+  border: 0;
+  border-radius: 1rem;
+  background-color: rgba(124, 124, 124, 0.342);
+  height: 2.5rem;
+  width: 60%;
+  display: block;
+  margin: .4rem;
+  text-align: center;
+}
+.caixa:hover{
+  background-color: rgba(172, 148, 148, 0.712);
+}
+  p#enunciado{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(177, 176, 175);
+    font-weight: bolder;
+  }
+  .botao {
+    border: 0;
+    border-radius: 1rem;
+    display: block;
+    height: 7vh;
+    width: 10rem;
+    margin: .4rem;
+    background-color: lightslategrey;
+    color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 25px;
+  }
+  .botao:hover{
+  background-color: rgba(105, 160, 134, 0.589);
+  cursor: pointer;
+  }
+  .fundo_menu{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.fundo_texto_m{
+    background-color: rgba(241, 240, 238, 0.89);
+    height: 2rem;
+    width: 33vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    animation: fadeInRight 2s;
+    box-shadow: 1px 1px black;
+    border-radius: 10px;
+}
+.lupa
+{
+    width: 35px;
+    height: 35px;
+    text-decoration: #ffff;
+}
+.box_menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+  .link{
+    text-decoration: none;
+    color: rgb(86, 152, 226);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+</head>
+<link rel="stylesheet" type="text/css" href="cadastro.css">
+<body>
+    <div class="container">
+        <img src="logo_ppe.png" class="logo">
+        <form class="box" action="cadastro_usuario.php" method="post">
+          <p id="enunciado">Cadastre-se</p>
+          <input type="email" name="email" placeholder="insira seu e-mail"class="caixa" required>
+          <input type="text" name="cpf" placeholder="insira seu CPF"class="caixa" required>
+          <input type="text" name="nome" placeholder="insira um nome de usuário"class="caixa" required>
+          <input type="password" name="senha" placeholder="insira uma senha"class="caixa" required>
+          <input type="submit" class="confirmar" name="inserir" value="Confirmar">
+        </form>
+      </div>
+</body>
+</html>

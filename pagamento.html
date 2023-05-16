@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" type="text/css" href="pagamento.css">
+    <link rel="stylesheet" type="text/js" href="menu_cor.js">
+</head>
+<body>
+    <body>
+        <div class="navegacao">
+            <ul>
+                <li class = "list active">
+                    <a href="testemenu.html">
+                        <span class="icon"><ion-icon name="menu-outline"></ion-icon></span>
+                        <span class="titulo">Home</span>
+                    </a>
+                </li>
+                <li class = "list">
+                    <a href="custom_perfil.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="titulo">Perfil</span>
+                    </a>
+                </li>
+                <li class = "list">
+                    <a href="suporte.html">
+                        <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                        <span class="titulo">Suporte</span>
+                    </a>
+                </li>  
+                <li class = "list">
+                    <a href="produtos.html">
+                        <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                        <span class="titulo">Peças</span>
+                    </a>
+                </li>    
+                <li class = "list">
+                    <a href="tela_ja_tem_conta.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="titulo">Logout</span>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+        <div class="fundo_menu">
+            <form class="box_menu">
+                <input type="text" placeholder="Pesquisar" class="fundo_texto_m">
+                <input type="image" id="image" alt="Login" src="search-circle-outline.svg" class="lupa">
+            </form>
+        </div>
+        <img src="melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
+        <div class="fundo_tela2">        
+            <form action="crud.php" method="post">
+                <fieldset>
+                    <legend class="legenda">Dados de Pagamento</legend>
+                    <br>
+                    Nome do Portador: <input type="text" class="nome_titular" name="nome_titular" id="nome_titular" placeholder="Nome do Titular" />
+                    <br><br>
+                    N° do Cartão: <input type="text" id="numero_cartao" class="numero_cartao" name="numero_cartao" placeholder="Número do cartão" />
+                    <br><br>
+                    CPF: <input type="text" id="cpf" class="cpf" name="cpf" placeholder="CPF" />
+                    <br><br>
+                    Validade: <input type="date" id="validade" name="validade" class="validade" placeholder="Validade"> 
+                    <br><br>
+                    Código de Segurança (CVV): <input type="text" placeholder="CVV" class="cvv" name="cvv" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="3">
+                    <br><br>
+                    <input type="submit" class="confirmar" name="inserir" value="Confirmar Pedido"> 
+                </fieldset>
+            </form>
+        </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
+
+</body>
+
+</html>

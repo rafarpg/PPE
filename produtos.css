@@ -1,0 +1,488 @@
+#txtBusca{
+    float:left;
+    background-color: #fff;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:700px;
+    z-index: 5;
+    position: absolute;
+    left: 400px;
+    top: 18px;
+  }
+/* Estilo global */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.lupa
+{
+    width: 35px;
+    height: 35px;
+    text-decoration: #ffff;
+    position: absolute;
+}
+/* Estilo do cabeçalho */
+header {
+	background-color: rgba(253, 135, 0);
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+	color: #fff;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Estilo dos produtos em destaque */
+    .destaque h2 {
+        text-align: center;
+        }
+        
+        .destaque ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        }
+        
+        .destaque li {
+        width: 30%;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        }
+        
+        .destaque li a {
+        color: #333;
+        text-decoration: none;
+        }
+        
+        .destaque li a:hover {
+        color: #f2f2f2;
+        background-color: #333;
+        }
+        
+        .destaque img {
+        max-width: 100%;
+        height: auto;
+        }
+        
+        .destaque h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        }
+        
+        .destaque p {
+        margin: 0;
+        }
+        
+        /* Estilo de todos os produtos */
+        .todos-os-produtos h2 {
+        text-align: center;
+        }
+        
+        .todos-os-produtos ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+        
+        .todos-os-produtos li {
+        width: 30%;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        }
+        
+        .todos-os-produtos li a {
+        color: #333;
+        text-decoration: none;
+        }
+        
+        .todos-os-produtos li a:hover {
+        color: #f2f2f2;
+        background-color: #333;
+        }
+        
+        .todos-os-produtos img {
+        max-width: 100%;
+        height: auto;
+        }
+        
+        .todos-os-produtos h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        }
+        
+        .todos-os-produtos p {
+        margin: 0;
+        }
+        
+        /* Estilo do rodapé */
+        footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        z-index: 4;
+        }
+        /* Estilo de todos os produtos */
+        .todos-os-produtos2 h2 {
+            text-align: center;
+            }
+            
+            .todos-os-produtos2 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+            
+            .todos-os-produtos2 li {
+            width: 30%;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            }
+            
+            .todos-os-produtos2 li a {
+            color: #333;
+            text-decoration: none;
+            }
+            
+            .todos-os-produtos2 li a:hover {
+            color: #f2f2f2;
+            background-color: #333;
+            }
+            
+            .todos-os-produtos2 img {
+            max-width: 100%;
+            height: auto;
+            }
+            
+            .todos-os-produtos2 h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            }
+            
+            .todos-os-produtos2 p {
+            margin: 0;
+            }
+            /* Estilo de todos os produtos */
+        .todos-os-produtos3 h2 {
+            text-align: center;
+            }
+            
+            .todos-os-produtos3 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+            
+            .todos-os-produtos3 li {
+            width: 30%;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            }
+            
+            .todos-os-produtos3 li a {
+            color: #333;
+            text-decoration: none;
+            }
+            
+            .todos-os-produtos3 li a:hover {
+            color: #f2f2f2;
+            background-color: #333;
+            }
+            
+            .todos-os-produtos3 img {
+            max-width: 100%;
+            height: auto;
+            }
+            
+            .todos-os-produtos3 h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            }
+            
+            .todos-os-produtos3 p {
+            margin: 0;
+            }
+         /* Estilo de todos os produtos */
+        .todos-os-produtos4 h2 {
+            text-align: center;
+            }
+            
+            .todos-os-produtos4 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+            
+            .todos-os-produtos4 li {
+            width: 30%;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            }
+            
+            .todos-os-produtos4 li a {
+            color: #333;
+            text-decoration: none;
+            }
+            
+            .todos-os-produtos4 li a:hover {
+            color: #f2f2f2;
+            background-color: #333;
+            }
+            
+            .todos-os-produtos4 img {
+            max-width: 100%;
+            height: auto;
+            }
+            
+            .todos-os-produtos4 h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            }
+            
+            .todos-os-produtos4 p {
+            margin: 0;
+            }
+        /* Estilo de todos os produtos */
+        .todos-os-produtos5 h2 {
+            text-align: center;
+            }
+            
+            .todos-os-produtos5 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+            
+            .todos-os-produtos5 li {
+            width: 30%;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            }
+            
+            .todos-os-produtos5 li a {
+            color: #333;
+            text-decoration: none;
+            }
+            
+            .todos-os-produtos5 li a:hover {
+            color: #f2f2f2;
+            background-color: #333;
+            }
+            
+            .todos-os-produtos5 img {
+            max-width: 100%;
+            height: auto;
+            }
+            
+            .todos-os-produtos5 h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            }
+            
+            .todos-os-produtos5 p {
+            margin: 0;
+            }
+                    /* Estilo de todos os produtos */
+        .todos-os-produtos6 h2 {
+            text-align: center;
+            }
+            
+            .todos-os-produtos6 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+            
+            .todos-os-produtos6 li {
+            width: 30%;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            }
+            
+            .todos-os-produtos6 li a {
+            color: #333;
+            text-decoration: none;
+            }
+            
+            .todos-os-produtos6 li a:hover {
+            color: #f2f2f2;
+            background-color: #333;
+            }
+            
+            .todos-os-produtos6 img {
+            max-width: 100%;
+            height: auto;
+            }
+            
+            .todos-os-produtos6 h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            }
+            
+            .todos-os-produtos6 p {
+            margin: 0;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navegacao
+{
+    position: absolute;
+    height: 241%;
+    background-color: rgb(48, 47, 47);
+    width: 70px;
+    box-shadow: 10px 0 0 rgba(253, 135, 0);
+    border-left: 10px solid rgb(48, 47, 47);
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+}
+.navegacao:hover
+{
+    width:300px;
+}
+.navegacao ul 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top:  40px;
+}
+.navegacao ul li
+{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.navegacao ul li a
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.navegacao ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+.navegacao ul li a .icon ion-icon
+{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.navegacao ul li a .titulo
+{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.navegacao ul li:hover
+{
+    background: rgba(253, 135, 0);
+}
+.navegacao ul li:hover a::before
+{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgb(48, 47, 47);
+    border-radius: 50%;
+    box-shadow: 15px 15px rgba(253, 135, 0);
+}
+.navegacao ul li:hover a::after
+{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgb(48, 47, 47);
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 rgba(253, 135, 0);
+}

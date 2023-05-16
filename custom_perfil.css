@@ -1,0 +1,89 @@
+body{
+    margin: 3px;
+    overflow: hidden;
+}
+.box {
+    border: 0;
+    border-radius: 2rem;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}  
+.botao
+{
+cursor: pointer;
+}
+.botao:hover
+{
+background-color: rgb(206, 207, 109);
+}
+.fundo_tela{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    width: 50vw;
+    height: 100vh;
+}
+.imagem{
+    height: 900px;
+    width: 1360px;
+    left: 0px;
+    top: -15px;
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+}
+.fundo_tela2
+{   
+    width: 45vw;
+    height: 100vh;
+    background-color: rgb(56, 52, 47);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+}
+.texto2
+{
+    position: absolute;
+    font-size: 30px;
+    color: antiquewhite;
+    width: 650px;
+    height: 350px;
+    top: 400px;
+    left: 920px;
+    background-color: orangered;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    border-radius: 20px;
+    border: solid;
+    border-color: rgb(214, 210, 201);
+}
+.logo
+    {
+     position: absolute;
+     width: 250px;
+     height: 235px; 
+     top: 130px;
+     left: 1125px;  
+     z-index: 1;
+     border-radius: 35px;
+    }
+.cabeca
+    {
+     width: 210px;
+     height: 140px;
+     top: -15px;
+     left: -50px;  
+     z-index: 1;
+     position: absolute;
+    }

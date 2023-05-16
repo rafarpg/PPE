@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Já tem uma conta?</title>
+</head>
+<link rel="stylesheet" type="text/css" href="tela_ja_tem_conta.css">
+<link rel="stylesheet" type="text/js" href="menu_cor.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<body>
+    <div class="navegacao">
+        <ul>
+            <li class = "list active">
+                <a href="testemenu.html">
+                    <span class="icon"><ion-icon name="menu-outline"></ion-icon></span>
+                    <span class="titulo">Home</span>
+                </a>
+            </li>
+            <li class = "list">
+                <a href="custom_perfil.html">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <span class="titulo">Perfil</span>
+                </a>
+            </li>
+            <li class = "list">
+                <a href="suporte.html">
+                    <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                    <span class="titulo">Suporte</span>
+                </a>
+            </li>  
+            <li class = "list">
+                <a href="produtos.html">
+                    <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                    <span class="titulo">Peças</span>
+                </a>
+            </li>    
+            <li class = "list">
+                <a href="tela_ja_tem_conta.html">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="titulo">Logout</span>
+                </a>
+            </li> 
+        </ul>
+    </div>
+        <div class="fundo_menu">
+            <form class="box_menu">
+                <input type="text" placeholder="Pesquisar" class="fundo_texto_m">
+                <input type="image" id="image" alt="Login" src="search-circle-outline.svg" class="lupa">
+            </form>
+        </div>
+        <div class="imagem">
+            <img src="melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
+        </div>
+        <div class="fundo_tela">
+            <div class="fundo_tela2"> 
+                <div class="espacinho"></div>
+                <img src="logo_ppe.png" class="logo">      
+                <a href="cadastro.html" class="texto1" id="cadastro"target="_self">Cadastre-se</a>
+                <a href="tela_login.html" class="texto2" id="login" target="_self">Entrar</a>
+                </div>
+        </div>
+        <div class="cookie" id="cookie">
+            Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.
+            <button onclick="aceitarCookies()">Aceitar</button>
+            <a href="termos_de_uso.html" _self>Termos de uso</a>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function aceitarCookies() {
+          document.getElementById("cookie").style.display = "none";
+        }
+      </script>
+</body>
+
+</html>
