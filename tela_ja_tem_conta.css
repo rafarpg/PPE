@@ -125,10 +125,11 @@ body{
     width: 100%;
     height: 100px;
     text-align: center;
-    background-color: #333;
+    background-color: rgb(138, 135, 135);
     color: #fff;
     padding: 10px;
     z-index: 4;
+    font-size: 20px;
   }
 
   #cookie button {
@@ -138,6 +139,9 @@ body{
     padding: 5px 10px;
     margin-left: 10px;
     cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 5px;
   }
 .navegacao
 {
