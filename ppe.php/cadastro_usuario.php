@@ -10,7 +10,7 @@ if(isset($_POST["inserir"]))
 { 
     $comando = $pdo->prepare("INSERT INTO usuarios(email,cpf,nome,senha) VALUES('$email','$cpf','$nome','$senha')");
     $resultado = $comando->execute();  
-    header("Location: tela_login.html");
+    header("Location: ../ppe.html/tela_login.html");
 }
 
 
