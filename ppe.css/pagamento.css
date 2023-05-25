@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     overflow: hidden;
+    background-color: rgb(56, 55, 55);
 }
 .tela
 {
@@ -36,12 +37,11 @@ body{
 .fundo_tela{
     background-color: rgb(56, 55, 55);
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: right;
-    position: absolute;
     z-index: 3;
 }
 .fundo_texto_m{
@@ -95,19 +95,18 @@ fieldset
     justify-content: space-between;
     justify-items: center;
     color: #ffff;
-    font-size: 25px;
-  
+    font-size: 20px;
 }
 .caixa
 {
     border-radius: 5px;
-    height: 25px;
+    height: 20px;
     width: 400px; 
 }
 .cvv
 {
     border-radius: 5px;
-    height: 25px;
+    height: 20px;
     width: 40px; 
 }
 .errado
