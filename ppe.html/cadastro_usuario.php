@@ -1,5 +1,5 @@
 <?php
-    include("conecta_usuario.php");
+    include("conecta.php");
 
     $email = $_POST["email"];
     $cpf = $_POST["cpf"];

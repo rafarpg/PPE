@@ -29,6 +29,13 @@ header {
 	background-color: rgba(253, 135, 0);
 	color: #fff;
 	padding: 20px;
+    padding-top: 50px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
 }
 
 header h1 {
@@ -152,12 +159,19 @@ header nav ul li a:hover {
         }
         
         /* Estilo do rodapé */
-        footer {
+        .rodape {
         background-color: #333;
         color: #fff;
         padding: 20px;
         text-align: center;
-        z-index: 4;
+        z-index: 999;
+        }
+        footer{
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                z-index: 999;
         }
         /* Estilo de todos os produtos */
         .todos-os-produtos2 h2 {
@@ -395,7 +409,7 @@ header nav ul li a:hover {
 .navegacao
 {
     position: absolute;
-    height: 241%;
+    height: 270vh;
     background-color: rgb(48, 47, 47);
     width: 70px;
     box-shadow: 10px 0 0 rgba(253, 135, 0);
