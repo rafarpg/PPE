@@ -90,8 +90,25 @@ legend
 }
 fieldset
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
     color: #ffff;
-    font-size: 20px;
+    font-size: 25px;
+  
+}
+.caixa
+{
+    border-radius: 5px;
+    height: 25px;
+    width: 400px; 
+}
+.cvv
+{
+    border-radius: 5px;
+    height: 25px;
+    width: 40px; 
 }
 .errado
 {
