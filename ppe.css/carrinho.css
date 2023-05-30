@@ -257,14 +257,13 @@ aside > button:hover {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .back-button:hover {
   background-color: #dd350b;
 }
-/*# sourceMappingURL=styles.css.map */
-/* CSS for the button */
-#bottomButton {
+.bottomButton {
   position: relative;
   left: -650px;
   display: block;
@@ -278,10 +277,10 @@ aside > button:hover {
   margin: 20px auto;
 }
 
-#bottomButton:hover {
+.bottomButton:hover {
   background-color: #ff4000;
 }
 
-#bottomButton:active {
+.bottomButton:active {
   background-color: #fa8900;
 }
