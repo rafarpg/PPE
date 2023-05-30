@@ -43,9 +43,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -66,9 +66,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -89,9 +89,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -112,9 +112,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -135,9 +135,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -158,9 +158,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -181,9 +181,9 @@
                 <td>R$---</td>
                 <td>
                   <div class="qty">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>1</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="decreaseQuantity()"><i class="bx bx-minus"></i></button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$---</td>
@@ -217,4 +217,19 @@
     </main>
     <a href='produtos.html'><button id="bottomButton" class="bottomButton">Voltar</button></a>
   </body>
+  <script>
+    function decreaseQuantity() {
+    var quantityElement = document.getElementById("quantity");
+    var currentQuantity = parseInt(quantityElement.innerText);
+    if (currentQuantity > 1) {
+      quantityElement.innerText = currentQuantity - 1;
+    }
+  }
+
+  function increaseQuantity() {
+    var quantityElement = document.getElementById("quantity");
+    var currentQuantity = parseInt(quantityElement.innerText);
+    quantityElement.innerText = currentQuantity + 1;
+  }
+  </script>
 </html>
