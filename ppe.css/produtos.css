@@ -157,7 +157,7 @@ header nav ul li a:hover {
         color: #fff;
         padding: 20px;
         text-align: center;
-        z-index: 4;
+        z-index: 999;
         }
         /* Estilo de todos os produtos */
         .todos-os-produtos2 h2 {
@@ -395,14 +395,14 @@ header nav ul li a:hover {
 .navegacao
 {
     position: absolute;
-    height: 241%;
+    height: 260%;
     background-color: rgb(48, 47, 47);
     width: 70px;
     box-shadow: 10px 0 0 rgba(253, 135, 0);
     border-left: 10px solid rgb(48, 47, 47);
     overflow: hidden;
     transition: 0.5s;
-    z-index: 2;
+    z-index: 1;
 }
 .navegacao:hover
 {
@@ -499,6 +499,7 @@ header nav ul li a:hover {
     border: none;
     border-radius: 8px;
     margin: 30px auto;
+    cursor: pointer;
   }
   
   #bottomButton:hover {
