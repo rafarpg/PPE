@@ -108,7 +108,7 @@ table tbody tr td {
   color: #666;
 }
 
-.qty {
+.qtde {
   background: #eee;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -125,11 +125,11 @@ table tbody tr td {
   height: 30px;
 }
 
-.qty span {
+.qtde span {
   margin: 0 10px;
 }
 
-.qty button {
+.qtde button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,7 @@ table tbody tr td {
   height: 100%;
 }
 
-.qty button:hover {
+.qtde button:hover {
   background: #ddd;
 }
 
@@ -166,7 +166,7 @@ table tbody tr td {
 }
 
 .remove:hover {
-  background: #ddd;
+  background: rgb(223, 147, 147);
 }
 
 aside {
