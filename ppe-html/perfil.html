@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customização de Perfil</title>
+  <link rel="stylesheet" href="../ppe.css/perfil.css">
+  <body>
+    <div class="navegacao">
+      <ul>
+          <li class = "list active">
+              <a href="testemenu.html">
+                  <span class="icon"><ion-icon name="menu-outline"></ion-icon></span>
+                  <span class="titulo">Home</span>
+              </a>
+          </li>
+          <li class = "list">
+              <a href="custom_perfil.html">
+                  <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                  <span class="titulo">Perfil</span>
+              </a>
+          </li>
+          <li class = "list">
+              <a href="suporte.html">
+                  <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                  <span class="titulo">Suporte</span>
+              </a>
+          </li>  
+          <li class = "list">
+              <a href="produtos.html">
+                  <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                  <span class="titulo">Peças</span>
+              </a>
+          </li>    
+          <li class = "list">
+              <a href="tela_ja_tem_conta.html">
+                  <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                  <span class="titulo">Logout</span>
+              </a>
+          </li> 
+      </ul>
+  </div>
+  </body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("../ppe.imagens/fundo_cus.jpg");
+      background-repeat: no-repeat, repeat-x;
+      background-position: top right, center;
+      background-size: 1700px 800px;  
+      
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      opacity: 0.9;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    .form-group button {
+      padding: 10px 20px;
+      background-color: #ff3c00;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .form-group button:hover {
+      background-color: #ff5e00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Customização de Perfil</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gênero:</label>
+        <select id="gender" name="gender">
+          <option value="male">Masculino</option>
+          <option value="female">Feminino</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirmar Senha:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha">
+      </div>
+      <div class="form-group">
+        <button type="submit">Salvar</button>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
