@@ -1,18 +1,31 @@
 <?php 
+include("conecta2.php");
 
-if(isset($_POST['entrar'])) { 
 
+
+
+
+// Verifica se o formulário foi submetido
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Obtém as credenciais do formulário
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
 
-    $sql_code = "SELECT nome, senha FROM usuarios WHERE nome = '$nome' LIMIT 1";
-    $sql_exec = $mysqli->query($sql_code) or die($mysqli->error);
+    // Consulta o banco de dados para verificar as credenciais
+    $stmt = $conn->prepare('SELECT * FROM usuarios WHERE nome = :nome');
+    $stmt->bindParam(':nome', $nome);
+    $stmt->execute();
+    $user = $stmt->fetch();
 
-    $nome = $sql_exec->fetch_assoc();
-    if(password_verify($senha, $nome['senha'])){
-    header("Location: testemenu.html");
-	} else {
-		echo "Nenhum usuário com esse login e senha foi encontrado!";
-	}
+    // Verifica se o usuário existe e se a senha está correta
+    if ($user && password_verify($senha, $user['senha'])) {
+        // Autenticação bem-sucedida, redireciona para a página de sucesso
+        header('Location: testemenu.html');
+        exit;
+    } else {
+        // Autenticação falhou, exibe uma mensagem de erro
+        echo 'Usuário ou senha inválidos.';
+    }
 }
+?>
 ?>
