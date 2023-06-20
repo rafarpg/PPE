@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento</title>
-    <link rel="stylesheet" type="text/css" href="../ppe.css/pagamento.css">
+    <title>Endereço</title>
+    <link rel="stylesheet" type="text/css" href="../ppe.css/endereco.css">
     <link rel="stylesheet" type="text/js" href="../ppe.js/menu_cor.js">
 </head>
 <body>
@@ -52,55 +52,88 @@
         </div>
         <img src="../ppe.imagens/melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
         <div class="fundo_tela2">        
+            <form>
                 <fieldset>
-                    <legend class="legenda">Dados de Pagamento</legend>
-                    <br>
-                    Nome do Portador: <input type="text" class="nome_titular" id="nome_titular" placeholder="Nome do Titular" />
-                    <br><br>
-                    CPF: <input type="text" id="cpf" placeholder="CPF" maxlength="11" onkeyup="validar();" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
-                    <br><br>
-                    CEP: <input type="text" id="cep" placeholder="CEP" maxlength="8" onkeyup="validarcep();" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
-                    <br><br>
-                    Validade: <input type="date" id="validade" placeholder="Validade"> Código de Segurança (CVV): <input type="text" placeholder="CVV" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="3">
-                </fieldset>
+                <legend>Dados de Pagamento</legend>
+                    <label for="cep">CEP*</label>
+                    <input id="cepInput" type="text" class="caixa" required/>
+                    <label for="logradouro">Rua*</label>
+                    <input id="logradouro" type="text" class="caixa" required/>
+                    <label for="numero">Número</label>
+                    <input id="numero" type="text" class="cvv" />
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" type="text" class="caixa"/>
+                    <label for="bairro">Bairro* </label>
+                    <input id="bairro" type="text" class="caixa" required/>
+                    <label for="uf">Estado*</label>
+                    <select id="uf" class="caixa" required>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                </select>
+            </fieldset>
+            </form>
         </div>
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </body>
     </html>
 
 </body>
+
 <script>
-    function validar()
-    {
-        expressao = /^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$/g;
-        texto = cpf.value
-        resposta = expressao.test(texto);
-        if(resposta==false)
-        {
-            cpf.classList.add('errado');
-            cpf.classList.remove('certo');
+    var cepInput = document.getElementById("cepInput");
+
+    cepInput.addEventListener("input", function() {
+      var cep = cepInput.value;
+      if (cep.length === 8) {
+        buscarEndereco(cep);
+      }
+    });
+
+    function buscarEndereco(cep) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://viacep.com.br/ws/" + cep + "/json/", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var endereco = JSON.parse(xhr.responseText);
+          exibirEndereco(endereco);
         }
-        if(resposta==true)
-        {
-            cpf.classList.add('certo');
-            cpf.classList.remove('errado');
-        }
+      };
+      xhr.send();
     }
-    function validarcep()
-    {
-        expressao = /^[0-9]{5}-[0-9]{3}$/g;
-        texto = cep.value
-        resposta = expressao.test(texto);
-        if(resposta==false)
-        {
-            alert ("CEP INCORRETO");
-        }
-        else
-        {
-            alert ("CEP CORRETO");
-        }
+
+    function exibirEndereco(endereco) {
+      document.getElementById("logradouro").value = endereco.logradouro || "";
+      document.getElementById("bairro").value = endereco.bairro || "";
+      document.getElementById("cidade").value = endereco.localidade || "";
+      document.getElementById("estado").value = endereco.uf || "";
     }
-</script>
+  </script>
 </html>
