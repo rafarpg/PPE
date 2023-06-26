@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'ppe';
-$nome = 'nome';
-$senha = 'senha';
+$servername = "localhost";
+$username = "nome";
+$password = "senha";
+$dbname = "ppe";
 
 // Conecta ao banco de dados
 try {
