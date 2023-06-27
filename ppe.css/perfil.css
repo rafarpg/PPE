@@ -5,20 +5,20 @@ body {
     height: 100vh;  
     overflow: hidden;
     background-size: cover;
+
   }
   
   .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     opacity: 0.9;
     position: relative;
-    top: 30px;
+    top: 10px;
   }
-  
   h1 {
     text-align: center;
     margin-top: 0;
@@ -32,7 +32,11 @@ body {
     font-weight: bold;
     margin-bottom: 5px;
   }
-  
+  .form-group .enunciado{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
   .form-group input,
   .form-group select {
     width: 95%;
@@ -42,7 +46,7 @@ body {
     font-size: 16px;
   }
   
-  .form-group button {
+  .form-group .confirmar {
     padding: 10px 20px;
     background-color: #ff3c00;
     color: #fff;
@@ -50,8 +54,9 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 200px;
   }
-  .form-group button:hover {
+  .form-group .confirmar {
     background-color: #ff5e00;
   }
 .navegacao
@@ -66,6 +71,7 @@ body {
     transition: 0.5s;
     z-index: 3;
     left: -10px;
+    top: -10px;
 }
 .navegacao:hover
 {

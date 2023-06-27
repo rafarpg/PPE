@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+<html lang="pt-br">
 <html>
 <head>
   <title>Customização de Perfil</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../ppe.css/perfil.css">
   <body>
     <div class="navegacao">
@@ -42,26 +46,38 @@
 </head>
 <body>
   <div class="container">
-    <h1>Customização de Perfil</h1>
+    <h1>Alterar nome de Usuário</h1>
     <form action="editar.php" method="post">
       <div class="form-group">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="nome" class="caixa" placeholder="Digite seu nome">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
+        <label for="email">Confirme seu email:</label>
         <input type="email" id="email" name="email" class="caixa" placeholder="Digite seu email">
       </div>
       <div class="form-group">
-        <label for="password">Senha Atual:</label>
-        <input type="password" id="password"  class="caixa" name="senha" placeholder="Digite sua senha">
+        <label for="name">Alterar nome de usuário:</label>
+        <input type="text" id="name" name="nome" class="caixa" placeholder="Digite o novo nome de usuário">
       </div>
       <div class="form-group">
-        <label for="confirm-password">Alterar Senha:</label>
-        <input type="password" id="confirm-password" class="caixa" name="confirm-password" placeholder="Confirme sua senha">
+        <input type="submit" class="confirmar" name="inserir" value="Salvar Alterações">
       </div>
+    </form>
+  </div>
+  <div class="container">
+    <h1>Alterar Senha</h1>
+    <form action="editar2.php" method="post">
       <div class="form-group">
-        <button type="submit">Salvar</button>
+        <label for="email">Confirme seu email:</label>
+        <input type="email" id="email" name="email" class="caixa" placeholder="Digite seu email">
+      </div>
+    <div class="form-group">
+      <label for="password">Senha Atual:</label>
+      <input type="password" id="password"  class="caixa" name="senha" placeholder="Digite sua senha">
+    </div>
+      <div class="form-group">
+      <label for="confirm-password">Alterar Senha:</label>
+      <input type="password" id="confirm-password" class="caixa" name="nova-senha" placeholder="Confirme sua senha">
+    </div>
+      <div class="form-group">
+        <input type="submit" class="confirmar" name="inserir" value="Salvar Alterações">
       </div>
     </form>
   </div>
