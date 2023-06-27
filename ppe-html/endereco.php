@@ -52,21 +52,24 @@
         </div>
         <img src="../ppe.imagens/melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
         <div class="fundo_tela2">        
-            <form>
+            <form action="endereco2.php" method="post">
                 <fieldset>
-                <legend>Dados de Pagamento</legend>
-                    <label for="cep">CEP*</label>
-                    <input id="cepInput" type="text" class="caixa" required/>
-                    <label for="logradouro">Rua*</label>
-                    <input id="logradouro" type="text" class="caixa" required/>
-                    <label for="numero">Número</label>
-                    <input id="numero" type="text" class="cvv" />
-                    <label for="complemento">Complemento</label>
-                    <input id="complemento" type="text" class="caixa"/>
-                    <label for="bairro">Bairro* </label>
-                    <input id="bairro" type="text" class="caixa" required/>
-                    <label for="uf">Estado*</label>
-                    <select id="uf" class="caixa" required>
+                <legend>Endereço de Entrega</legend>
+                    <label for="cep">CEP:</label>
+                    <input id="cepInput" type="text" name="cep" class="caixa" required/>
+                    <label for="logradouro">Rua:</label>
+                    <input id="logradouro" type="text" name="rua" class="caixa" required/>
+                    <label for="numero">Número:</label>
+                    <input id="numero" name="num" type="text" class="num" />
+                    <label for="complemento">Complemento:</label>
+                    <input id="complemento" name="complemento" type="text" class="caixa"/>
+                    <label for="bairro">Bairro: </label>
+                    <input id="bairro" type="text" name="bairro" class="caixa" required/>
+                    <label for="cidade">Cidade: </label>
+                    <input id="cidade" type="text" name="cidade" class="caixa" required/>
+                    <label for="uf">Estado:</label>
+                    <select id="uf" name="estado" class="caixa2" required>
+                        <option value="EST">Estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
                         <option value="AP">Amapá</option>
@@ -95,6 +98,10 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                 </select>
+                <div class="box-botao">
+                <input type="submit" class="botao" name="inserir" value="Confirmar Endereço">
+                </div>
+                <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
             </fieldset>
             </form>
         </div>
@@ -106,34 +113,4 @@
     </html>
 
 </body>
-
-<script>
-    var cepInput = document.getElementById("cepInput");
-
-    cepInput.addEventListener("input", function() {
-      var cep = cepInput.value;
-      if (cep.length === 8) {
-        buscarEndereco(cep);
-      }
-    });
-
-    function buscarEndereco(cep) {
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "https://viacep.com.br/ws/" + cep + "/json/", true);
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var endereco = JSON.parse(xhr.responseText);
-          exibirEndereco(endereco);
-        }
-      };
-      xhr.send();
-    }
-
-    function exibirEndereco(endereco) {
-      document.getElementById("logradouro").value = endereco.logradouro || "";
-      document.getElementById("bairro").value = endereco.bairro || "";
-      document.getElementById("cidade").value = endereco.localidade || "";
-      document.getElementById("estado").value = endereco.uf || "";
-    }
-  </script>
 </html>

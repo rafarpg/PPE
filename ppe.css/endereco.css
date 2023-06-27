@@ -74,6 +74,10 @@ body{
     right: 0;
     top: 165px;
     z-index: -1;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
 }
 .confirmar
 {
@@ -88,6 +92,10 @@ legend
     color:#ffff;
     font-size: 40px;
 }
+label{
+    position: relative;
+    left: 50px;
+}
 fieldset
 {
     display: flex;
@@ -96,28 +104,62 @@ fieldset
     justify-items: center;
     color: #ffff;
     font-size: 20px;
+    padding-right: 40px;
+    
 }
 .caixa
 {
     border-radius: 10px;
     height: 30px;
     width: 400px; 
+    position: relative;
+    left: 50px;
 }
-.cvv
+.caixa2
+{
+    border-radius: 10px;
+    height: 30px;
+    width: 400px; 
+    position: relative;
+    left: 50px;
+}
+.caixa:hover
+{
+    background-color: rgb(143, 180, 123);
+    box-shadow: 3px 3px 3px;
+}
+.num
 {
     border-radius: 5px;
     height: 20px;
-    width: 40px; 
+    width: 30px; 
+    position: relative;
+    left: 50px;
 }
-.errado
+.num:hover
 {
-    border: solid;
-    border-color: lightcoral;
+    background-color: rgb(143, 180, 123);
+    box-shadow: 3px 3px 3px;
 }
-.certo
+.botao
 {
-    border: solid;
-    border-color: rgb(154, 240, 128);
+    width: 150px;
+    height: 35px;
+    background-color: rgb(25, 160, 238);
+    color: #ffff;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+}
+.box-botao
+{
+    margin: 10px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap');
 .navegacao
