@@ -7,7 +7,7 @@ if (isset($_POST["senha"])) {
     $senha = $_POST["senha"];
 
     // Consulta para verificar se as informações estão corretas
-    $comando = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email AND senha = :senha");
+    $comando = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email AND senha = '$senha'");
     $comando->bindParam(":email", $email);
     $comando->bindParam(":senha", $senha);
     $comando->execute();
