@@ -59,7 +59,10 @@ header nav ul li a:hover {
 	background-color: #fff;
 	color: #333;
 }
-
+.todos-os-produtos li.selected {
+    background-color: #ffcc00;
+    color: #fff;
+  }
 /* Estilo dos produtos em destaque */
     .destaque h2 {
         text-align: center;
@@ -84,11 +87,6 @@ header nav ul li a:hover {
         .destaque li a {
         color: #333;
         text-decoration: none;
-        }
-        
-        .destaque li a:hover {
-        color: #f2f2f2;
-        background-color: #333;
         }
         
         .destaque img {
@@ -131,12 +129,6 @@ header nav ul li a:hover {
         color: #333;
         text-decoration: none;
         }
-        
-        .todos-os-produtos li a:hover {
-        color: #f2f2f2;
-        background-color: #333;
-        }
-        
         .todos-os-produtos img {
         max-width: 100%;
         height: auto;
@@ -186,11 +178,6 @@ header nav ul li a:hover {
             text-decoration: none;
             }
             
-            .todos-os-produtos2 li a:hover {
-            color: #f2f2f2;
-            background-color: #333;
-            }
-            
             .todos-os-produtos2 img {
             max-width: 100%;
             height: auto;
@@ -229,11 +216,6 @@ header nav ul li a:hover {
             .todos-os-produtos3 li a {
             color: #333;
             text-decoration: none;
-            }
-            
-            .todos-os-produtos3 li a:hover {
-            color: #f2f2f2;
-            background-color: #333;
             }
             
             .todos-os-produtos3 img {
@@ -276,11 +258,6 @@ header nav ul li a:hover {
             text-decoration: none;
             }
             
-            .todos-os-produtos4 li a:hover {
-            color: #f2f2f2;
-            background-color: #333;
-            }
-            
             .todos-os-produtos4 img {
             max-width: 100%;
             height: auto;
@@ -320,12 +297,6 @@ header nav ul li a:hover {
             color: #333;
             text-decoration: none;
             }
-            
-            .todos-os-produtos5 li a:hover {
-            color: #f2f2f2;
-            background-color: #333;
-            }
-            
             .todos-os-produtos5 img {
             max-width: 100%;
             height: auto;
@@ -364,11 +335,6 @@ header nav ul li a:hover {
             .todos-os-produtos6 li a {
             color: #333;
             text-decoration: none;
-            }
-            
-            .todos-os-produtos6 li a:hover {
-            color: #f2f2f2;
-            background-color: #333;
             }
             
             .todos-os-produtos6 img {
