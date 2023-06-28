@@ -14,6 +14,6 @@ if(isset($_POST["inserir"]))
 { 
 $comando = $pdo->prepare("INSERT INTO endereco(id_usuario_end,rua,cep,numero,complemento,bairro,cidade,estado) VALUES(NULL,'$rua','$cep',$num,'$complemento','$bairro','$cidade','$estado')");
 $resultado=$comando->execute();
-header("Location: testemenu.html");
+header("Location: pagamento.html");
 }
 ?>
