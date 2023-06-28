@@ -124,3 +124,62 @@ function dimQuantidade3() {
     var quantidadeElement = document.getElementById("quantidade7");
     quantidadeElement.textContent = "0";
   }
+  
+
+
+
+
+
+
+
+  
+  function updateTotal(row) {
+    var priceElement = row.querySelector('td:nth-child(2)');
+    var totalElement = row.querySelector('td:nth-child(4)');
+    var price = parseFloat(priceElement.textContent.replace('R$', ''));
+    var quantityElement = row.querySelector('.qtde span');
+    var quantity = parseInt(quantityElement.textContent);
+    var total = price * quantity;
+    totalElement.textContent = 'R$' + total.toFixed(2);
+    atualizarResumoCompra();
+  }
+
+  function aumQuantidade(id) {
+    var quantityElement = document.getElementById('quantidade' + id);
+    var quantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = quantity + 1;
+    var row = quantityElement.closest('tr');
+    updateTotal(row);
+  }
+
+  function dimQuantidade(id) {
+    var quantityElement = document.getElementById('quantidade' + id);
+    var quantity = parseInt(quantityElement.textContent);
+    if (quantity > 0) {
+      quantityElement.textContent = quantity - 1;
+      var row = quantityElement.closest('tr');
+      updateTotal(row);
+    }
+  }
+
+  function Remove(id) {
+    var row = document.getElementById('quantidade' + id).closest('tr');
+    row.remove();
+    atualizarResumoCompra();
+  }
+
+  function atualizarResumoCompra() {
+    var rows = document.querySelectorAll('tbody tr');
+    var totalCompra = 0;
+
+    rows.forEach(function (row) {
+      var totalElement = row.querySelector('td:nth-child(4)');
+      var total = parseFloat(totalElement.textContent.replace('R$', ''));
+      if (!isNaN(total)) {
+        totalCompra += total;
+      }
+    });
+
+    var totalResumoElement = document.querySelector('.box footer span:last-child');
+    totalResumoElement.textContent = 'R$' + totalCompra.toFixed(2);
+  }
