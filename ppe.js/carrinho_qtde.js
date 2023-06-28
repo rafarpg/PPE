@@ -132,7 +132,7 @@ function dimQuantidade3() {
 
 
 
-  
+
   function updateTotal(row) {
     var priceElement = row.querySelector('td:nth-child(2)');
     var totalElement = row.querySelector('td:nth-child(4)');
