@@ -1,6 +1,6 @@
 <?php
 include("conecta.php");  
-if (isset($_POST["senha"])) {
+
        
     $email = $_POST["email"];
     $novasenha = $_POST["nova-senha"];
@@ -14,15 +14,10 @@ if (isset($_POST["senha"])) {
     $n = $comando->rowCount();
     if ($n > 0) {
         // As informações estão corretas, então atualiza os dados do usuário
-        $comando = $pdo->prepare("UPDATE usuarios SET senha = :novasenha WHERE usuarios.email = :email");
-        $comando->bindParam(":novasenha", $novasenha); 
+        $comando = $pdo->prepare("UPDATE usuarios SET senha = '$novasenha' WHERE email = '$email'");
         $comando->execute();
         header("Location: testemenu.html");
     } else {
         header("Location: testemenu.html");
     }
-} 
-else {
-    header("Location: testemenu.html");
-}
 ?>

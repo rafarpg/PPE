@@ -10,13 +10,14 @@
 <style>
         .erro {
             color: red;
+            font-size: 20px;
         }
 </style>
 <body>
     <div class="container">
         <form class="box" action="login_valida.php" method="post">
-          <p id="enunciado">Entre com seu login e senha</p>
-          <p id="erro" class="erro">Usuário ou senha incorretos.</p>
+          <p id="enunciado" >Entre com seu login e senha</p>
+          <p id="erro" class="erro" font-size="10px">Usuário ou senha incorretos.</p>
           <input type="text" id="nome" name="nome" placeholder="insira seu usuário" class="caixa" required>
           <input type="password" id="senha" name="senha" placeholder="sua senha" class="caixa" required>
           <input type="submit" class="botao" name="entrar" value="Entrar">
